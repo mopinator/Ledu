@@ -38,4 +38,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: #ffc0cb;
+}
+
+.loader-container {
+	width: 100vw;
+	/* height: 100vh; */
+	background-color: pink;
+	position: absolute;
 }
