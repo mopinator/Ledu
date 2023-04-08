@@ -1,0 +1,41 @@
+.img-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 10rem;
+	/* border: 1px solid black; */
+}
+
+.img-container > img {
+	max-width: 20rem;
+}
+
+.sub-text {
+	font-size: 1.2rem;
+	font-style: italic;
+	padding: 1rem;
+	text-align: center;
+	color: rgb(51, 51, 51);
+}
+
+.social-media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-media > a {
+	color: black;
+	font-size: 2rem;
+	padding: 2rem;
+}
+
+.social-media > a:hover {
+	color: rgb(128, 128, 128);
+	transform: scale(130%);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
