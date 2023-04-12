@@ -1,7 +1,6 @@
 import styles from "./About.module.css";
-import restautant from "./images/ledu_placeholder.jpg";
-import scallop from "./images/scallop2.jpg";
-import local from "./images/chef_ton_local2.jpg";
+import scallop from "./images/scallop.jpg";
+import local from "./images/chef_ton_local.jpg";
 
 export default function About() {
 	return (
