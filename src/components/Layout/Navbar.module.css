@@ -11,6 +11,7 @@
 
 .links-container {
 	display: flex;
+	overflow: hidden;
 }
 
 .links {
@@ -33,7 +34,7 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
-		position: absolute;
+		position: fixed;
 		z-index: 1;
 		top: 0;
 		right: 0;
@@ -59,7 +60,7 @@
 		font-size: 2rem;
 		margin: 2rem;
 		z-index: 2;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		right: 0;
 	}
@@ -75,6 +76,50 @@
 	}
 	.links:hover {
 		transform: none;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.navbar,
+	.hidden-nav {
+		width: 50%;
+	}
+
+	.hidden-nav {
+		right: -50%;
+		animation: slide-out 0.4s ease-out;
+	}
+
+	.hamburger-icon,
+	.close-icon {
+		font-size: 1.75rem;
+		margin: 1.4rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.navbar,
+	.hidden-nav {
+		width: 100%;
+	}
+
+	.hidden-nav {
+		right: -100%;
+		animation: slide-out 0.4s ease-out;
+	}
+
+	.hamburger-icon,
+	.close-icon {
+		font-size: 1.55rem;
+		margin: 1.3rem;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.hamburger-icon,
+	.close-icon {
+		font-size: 1.5rem;
+		margin: 1rem;
 	}
 }
 

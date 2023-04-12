@@ -3,12 +3,12 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import NavLayout from "./components/Layout/NavLayout";
-import About from "./pages/About";
+import About from "./pages/About/About";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Menu from "./pages/Menu";
 import Team from "./pages/Team";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import BarLoader from "react-spinners/BarLoader";
 
 function App() {
 	const [loading, setLoading] = useState(false);
@@ -25,10 +25,10 @@ function App() {
 			{loading ? (
 				<div className={styles[`loader-container`]}>
 					<div>
+						<div className={styles[`loading-text`]}>Loading </div>
 						<div>
-							<PacmanLoader />
+							<BarLoader />
 						</div>
-						<div className={styles[`loading-text`]}>Loading ..... </div>
 					</div>
 				</div>
 			) : (
