@@ -4,3 +4,8 @@
 	align-items: center;
 	height: 100vh;
 }
+
+.loading-text {
+	margin-top: 1rem;
+	font-size: var(--text-xl);
+}

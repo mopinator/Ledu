@@ -1,18 +1,17 @@
 .img-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 10rem;
-	/* border: 1px solid black; */
+	margin-top: 6rem;
 }
 
 .img-container > img {
-	max-width: 20rem;
+	max-width: 25rem;
 }
 
 .sub-text {
 	font-size: 1.2rem;
 	font-style: italic;
-	padding: 1rem;
+	padding: 2rem;
 	text-align: center;
 	color: rgb(51, 51, 51);
 }
@@ -41,9 +40,16 @@
 	color: #ffc0cb;
 }
 
-.loader-container {
-	width: 100vw;
-	/* height: 100vh; */
-	background-color: pink;
-	position: absolute;
+@media screen and (max-width: 768px) {
+	.img-container {
+		margin-top: 10rem;
+	}
+	.img-container > img {
+		max-width: 20rem;
+	}
+	.social-media > a {
+		color: black;
+		font-size: 1.9rem;
+		padding: 1.9rem;
+	}
 }
