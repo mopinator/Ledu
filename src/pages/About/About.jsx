@@ -6,7 +6,7 @@ export default function About() {
 	return (
 		<>
 			<div className={styles["main-container"]}>
-				<h1 className={styles["main-heading"]}>Who we are</h1>
+				<h1 className={styles["main-heading"]}>Our Culture</h1>
 				<div className={styles["inner-container"]}>
 					<section className={styles["left-container"]}>
 						<div className={styles["top-img-container"]}>
