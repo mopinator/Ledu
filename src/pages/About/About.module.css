@@ -135,7 +135,7 @@
 	}
 
 	.body-images {
-		width: 94%;
+		width: 90%;
 	}
 
 	.body-text-top,
@@ -167,7 +167,7 @@
 	}
 
 	.right-container {
-		border: none;
+		border-left: none;
 		margin-top: 0rem;
 	}
 
@@ -214,6 +214,11 @@
 	.body-text-top,
 	.body-text-bot {
 		line-height: 1.6;
+		letter-spacing: 0.1px;
+	}
+
+	.body-text-bot {
+		letter-spacing: 0.04px;
 	}
 }
 
@@ -265,10 +270,15 @@
 
 	.body-text-top,
 	.body-text-bot {
+		line-height: 1.5;
 		margin-top: 0.8rem;
-		letter-spacing: 0.9px;
+		letter-spacing: 0.8px;
 		padding-bottom: 1rem;
 		border-bottom: 1px solid rgb(184, 184, 184);
+	}
+
+	.body-text-bot {
+		letter-spacing: 0.74px;
 	}
 }
 
@@ -312,7 +322,13 @@
 
 	.body-text-top,
 	.body-text-bot {
-		line-height: 1.4;
-		letter-spacing: 0.6px;
+		line-height: 1.5;
+		letter-spacing: 0.001px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.body-text-top {
+		letter-spacing: 0.08px;
 	}
 }
