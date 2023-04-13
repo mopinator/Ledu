@@ -15,8 +15,10 @@
 .inner-container {
 	display: flex;
 	width: 87%;
+	padding-top: 2rem;
 }
 
+/* shared class name styles */
 .text-area-top,
 .text-area-bot {
 	display: flex;
@@ -26,10 +28,10 @@
 	padding: 2rem;
 }
 
-/* shared class name styles */
 .left-container,
 .right-container {
 	display: flex;
+	height: max-content;
 	width: 50%;
 }
 
@@ -82,17 +84,13 @@
 	}
 
 	.right-container {
-		margin-top: 8rem;
+		margin-top: 7rem;
 	}
 
 	.heading-text-left,
 	.heading-text-right {
 		font-size: var(--text-xl);
 		font-weight: 400;
-	}
-
-	.body-images {
-		width: 100%;
 	}
 
 	.body-text-top,
@@ -128,7 +126,7 @@
 	}
 
 	.right-container {
-		margin-top: 8rem;
+		margin-top: 6rem;
 	}
 
 	.heading-text-left,
@@ -163,6 +161,7 @@
 		width: 95%;
 	}
 
+	/* shared class name styles */
 	.left-container,
 	.right-container {
 		width: 100%;
@@ -206,6 +205,7 @@
 		margin-top: 0rem;
 	}
 
+	/* shared class name styles */
 	.heading-text-left,
 	.heading-text-right {
 		font-weight: 400;
@@ -223,7 +223,6 @@
 
 	.body-text-bot {
 		line-height: 1.4;
-		/* letter-spacing: 0.04px; */
 	}
 }
 
@@ -237,6 +236,7 @@
 		width: 95%;
 	}
 
+	/* shared class name styles */
 	.left-container,
 	.right-container {
 		flex-direction: column;
@@ -293,6 +293,7 @@
 		padding: 1rem;
 	}
 
+	/* shared class name styles */
 	.left-container,
 	.right-container {
 		flex-direction: column;
