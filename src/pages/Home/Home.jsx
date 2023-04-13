@@ -19,7 +19,7 @@ export default function Home() {
 					<a href="https://www.instagram.com/ledubkk/" target="_blank">
 						<FontAwesomeIcon icon={faInstagramSquare} />
 					</a>
-					<a href="mailto:info@ledubkk.com">
+					<a href="mailto:info@ledubkk.com" target="_blank">
 						<FontAwesomeIcon icon={faEnvelope} />
 					</a>
 					<a href="https://goo.gl/maps/XJcEeLyfYbk1eFXi6" target="_blank">
