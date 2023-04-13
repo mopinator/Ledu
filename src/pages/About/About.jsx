@@ -14,7 +14,7 @@ export default function About() {
 						</div>
 						<div className={styles["text-area-top"]}>
 							<h1 className={styles["heading-text-left"]}>Seasonal Modern Thai</h1>
-							<p className={styles["body-text"]}>
+							<p className={styles["body-text-top"]}>
 								Le Du actually comes from a Thai word - “ฤดู”, a synonym for the word “season” in Thai. The name
 								reflects an emphasis on our culinary creations out of seasonal produce. Le Du is a modern Thai-inspired
 								eatery. We offer 4 courses and tasting menus featuring the extraordinary agricultural bounty of Thailand
@@ -27,7 +27,7 @@ export default function About() {
 					<section className={styles["right-container"]}>
 						<div className={styles["text-area-bot"]}>
 							<h1 className={styles["heading-text-right"]}>Philosophy</h1>
-							<p className={styles["body-text"]}>
+							<p className={styles["body-text-bot"]}>
 								For a very long time, Thai ingredients have been underappreciated. At Le Du, we believe Thailand is one
 								among the best places on earth for the finest ingredients. We source only quality ingredients from local
 								farmers who grow their amazing produce with love and care. Then, we combine them with modern cooking
