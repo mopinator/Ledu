@@ -15,7 +15,7 @@
 .inner-container {
 	display: flex;
 	width: 87%;
-	padding-top: 2rem;
+	padding-top: 2.5rem;
 }
 
 /* shared class name styles */
@@ -75,6 +75,7 @@
 
 	.inner-container {
 		width: 95%;
+		padding-top: 2.5rem;
 	}
 
 	/* shared class name styles */
@@ -97,7 +98,7 @@
 	.body-text-bot {
 		font-size: var(--text-sm);
 		margin-top: 0.8rem;
-		line-height: 1.35;
+		line-height: 1.25;
 		letter-spacing: 0.1px;
 	}
 }
@@ -106,11 +107,12 @@
 	.main-heading {
 		font-size: var(--text-3xl);
 		font-weight: 300;
-		margin-top: 2.5rem;
+		margin-top: 3.5rem;
 	}
 
 	.inner-container {
 		width: 100%;
+		padding-top: 3.5rem;
 	}
 
 	/* shared class name styles */
@@ -143,6 +145,7 @@
 	.body-text-bot {
 		font-size: var(--text-xs);
 		margin-top: 0.5rem;
+		line-height: 1.3;
 		letter-spacing: 0.1px;
 	}
 }
@@ -159,6 +162,7 @@
 	.inner-container {
 		flex-direction: column;
 		width: 95%;
+		padding-top: 0rem;
 	}
 
 	/* shared class name styles */
@@ -233,6 +237,7 @@
 
 	.inner-container {
 		flex-direction: column;
+		padding-top: 0.8rem;
 		width: 95%;
 	}
 
@@ -242,6 +247,7 @@
 		flex-direction: column;
 		align-items: center;
 		border-bottom: none;
+		padding: 0 0 1rem 0;
 		width: 100%;
 	}
 
@@ -290,7 +296,7 @@
 	.inner-container {
 		flex-direction: column;
 		width: 95%;
-		padding: 1rem;
+		padding: 1.5rem;
 	}
 
 	/* shared class name styles */

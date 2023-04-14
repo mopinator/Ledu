@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 
 export default function Navbar() {
 	const [openNav, setOpenNav] = useState(true);
@@ -40,6 +41,14 @@ export default function Navbar() {
 					<Link onClick={handleChange} className={styles.links} to="contact">
 						Contact
 					</Link>
+				</div>
+				<div className={!openNav ? styles["show-nav-social-icons"] : styles["hide-nav-social-icons"]}>
+					<a href="https://www.facebook.com/LeDuWineBarandrestaurant/" target="_blank">
+						<FontAwesomeIcon className={styles["nav-social-icons"]} icon={faFacebook} />
+					</a>
+					<a href="https://www.instagram.com/ledubkk/" target="_blank">
+						<FontAwesomeIcon className={styles["nav-social-icons"]} icon={faInstagramSquare} />
+					</a>
 				</div>
 			</nav>
 		</>

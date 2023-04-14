@@ -5,7 +5,9 @@
 	box-shadow: 1px 1px 5px #d8d8d8;
 }
 
-.hamburger {
+.hamburger,
+.hide-nav-social-icons,
+.show-nav-social-icons {
 	display: none;
 }
 
@@ -71,22 +73,28 @@
 		margin-top: 4rem;
 	}
 
-	.links {
-		padding: 1rem;
-	}
 	.links:hover {
 		transform: none;
+	}
+
+	.show-nav-social-icons {
+		display: flex;
+	}
+	.nav-social-icons {
+		padding: 1.5rem 1rem;
+		font-size: var(--text-3xl);
+		color: black;
 	}
 }
 
 @media screen and (max-width: 425px) {
 	.navbar,
 	.hidden-nav {
-		width: 50%;
+		width: 100%;
 	}
 
 	.hidden-nav {
-		right: -50%;
+		right: -100%;
 		animation: slide-out 0.4s ease-out;
 	}
 

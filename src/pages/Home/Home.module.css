@@ -48,7 +48,6 @@
 		max-width: 20rem;
 	}
 	.social-media > a {
-		color: black;
 		font-size: 1.9rem;
 		padding: 1.9rem;
 	}
@@ -58,16 +57,45 @@
 	.img-container {
 		margin-top: 6rem;
 	}
+
+	.img-container > img {
+		max-width: 18rem;
+	}
+
+	.sub-text {
+		font-size: 1.1rem;
+		padding: 1.8rem;
+	}
+
+	.social-media > a {
+		font-size: 1.7rem;
+		padding: 1.5rem;
+	}
 }
 
 @media screen and (max-width: 375px) {
+	.sub-text {
+		font-size: var(--text-base);
+		padding: 1.6rem;
+	}
 	.img-container > img {
-		max-width: 18rem;
+		max-width: 16rem;
+	}
+	.social-media > a {
+		font-size: 1.5rem;
+		padding: 1.4rem;
 	}
 }
 
 @media screen and (max-width: 320px) {
+	.sub-text {
+		font-size: var(--text-base);
+		padding: 1.4rem;
+	}
 	.img-container > img {
-		max-width: 16rem;
+		max-width: 14rem;
+	}
+	.social-media > a {
+		padding: 1.3rem;
 	}
 }
