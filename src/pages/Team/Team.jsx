@@ -7,6 +7,7 @@ export default function Team() {
 	return (
 		<>
 			<div className={styles["main-container"]}>
+				{/* <div>Leadership Team</div> */}
 				<div className={styles["inner-container"]}>
 					<div className={styles["img-container"]}>
 						<img className={styles["chef-ton-img"]} src={chef} alt="chef ton" />

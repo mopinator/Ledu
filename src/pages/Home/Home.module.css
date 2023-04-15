@@ -63,7 +63,7 @@
 	}
 
 	.sub-text {
-		font-size: 1.1rem;
+		font-size: var(--text-med);
 		padding: 1.8rem;
 	}
 
@@ -89,7 +89,6 @@
 
 @media screen and (max-width: 320px) {
 	.sub-text {
-		font-size: var(--text-base);
 		padding: 1.4rem;
 	}
 	.img-container > img {
