@@ -1,8 +1,9 @@
 import Logo from "./images/ledu.jpg";
 import styles from "../Home/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 export default function Home() {
 	return (
@@ -14,16 +15,16 @@ export default function Home() {
 			<div className={styles[`container`]}>
 				<div className={styles[`social-media`]}>
 					<a href="https://www.facebook.com/LeDuWineBarandrestaurant/" target="_blank">
-						<FontAwesomeIcon icon={faFacebook} />
+						<FontAwesomeIcon icon={faFacebookF} />
 					</a>
 					<a href="https://www.instagram.com/ledubkk/" target="_blank">
-						<FontAwesomeIcon icon={faInstagramSquare} />
-					</a>
-					<a href="mailto:info@ledubkk.com" target="_blank">
-						<FontAwesomeIcon icon={faEnvelope} />
+						<FontAwesomeIcon icon={faInstagram} />
 					</a>
 					<a href="https://goo.gl/maps/XJcEeLyfYbk1eFXi6" target="_blank">
 						<FontAwesomeIcon icon={faLocationDot} />
+					</a>
+					<a href="mailto:info@ledubkk.com" target="_blank">
+						<FontAwesomeIcon icon={faEnvelope} />
 					</a>
 				</div>
 			</div>

@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export default function Navbar() {
 	const [openNav, setOpenNav] = useState(true);
@@ -15,7 +15,7 @@ export default function Navbar() {
 	return (
 		<>
 			<div className={styles["hamburger"]}>
-				{openNav ? (
+				{!openNav ? (
 					<FontAwesomeIcon className={styles["hamburger-icon"]} icon={faBars} onClick={handleChange} />
 				) : (
 					<FontAwesomeIcon className={styles["close-icon"]} icon={faTimes} onClick={handleChange} />
@@ -42,12 +42,12 @@ export default function Navbar() {
 						Contact
 					</Link>
 				</div>
-				<div className={!openNav ? styles["show-nav-social-icons"] : styles["hide-nav-social-icons"]}>
+				<div className={openNav ? styles["show-nav-social-icons"] : styles["hide-nav-social-icons"]}>
 					<a href="https://www.facebook.com/LeDuWineBarandrestaurant/" target="_blank">
-						<FontAwesomeIcon className={styles["nav-social-icons"]} icon={faFacebook} />
+						<FontAwesomeIcon className={styles["nav-social-icons"]} icon={faFacebookF} />
 					</a>
 					<a href="https://www.instagram.com/ledubkk/" target="_blank">
-						<FontAwesomeIcon className={styles["nav-social-icons"]} icon={faInstagramSquare} />
+						<FontAwesomeIcon className={styles["nav-social-icons"]} icon={faInstagram} />
 					</a>
 				</div>
 			</nav>

@@ -1,37 +1,67 @@
 .main-container {
 	display: flex;
-	/* flex-direction: column; */
-	justify-content: center;
-	/* align-items: center; */
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-heading {
+	font-size: var(--text-5xl);
+	margin-top: 2rem;
+	font-weight: 200;
+	letter-spacing: 1px;
 }
 
 .inner-container {
 	display: flex;
 	justify-content: center;
-	width: 60%;
-	padding-top: 6rem;
-	/* border: 1px solid red; */
+	margin-top: 2rem;
+	width: 90%;
 }
 
-.img-container {
+.left-container,
+.right-container {
+	display: flex;
+	align-items: center;
+	height: max-content;
+	width: 50%;
+}
+
+.right-container {
+	margin-top: 10rem;
+	border-left: 1px solid rgb(184, 184, 184);
+}
+
+.img-container-left,
+.img-container-right {
 	display: flex;
 	justify-content: center;
-	/* border: 1px solid red; */
 }
 
-.chef-ton-img {
+.left-image,
+.right-image {
 	border-radius: 5px;
+	width: 85%;
 }
 
-.text-container {
-	width: 45%;
-	padding: 4rem 0 0 1.5rem;
-	/* border: 1px solid blue; */
+.text-container-left,
+.text-container-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 55%;
+}
+
+.text-container-left {
+	padding-right: 2rem;
+}
+
+.text-container-right {
+	padding-left: 2rem;
 }
 
 .heading-text {
-	font-size: var(--text-5xl);
-	font-weight: 200;
+	font-size: var(--text-3xl);
+	font-weight: 300;
 	line-height: 1.35;
 }
 
@@ -42,13 +72,13 @@
 	letter-spacing: 1px;
 }
 
-.body-text {
-	font-size: var(--text-lg);
-	padding: 1rem 1rem 0 0;
-	line-height: 1.4;
+.body-text-left,
+.body-text-right {
+	font-size: var(--text-base);
+	padding-top: 1rem;
+	line-height: 1.5;
 	font-weight: 400;
 	text-align: justify;
-	border-right: 1px solid rgb(184, 184, 184);
 }
 
 .social-media-link-container {
@@ -70,30 +100,23 @@
 }
 
 @media screen and (max-width: 1440px) {
-	.inner-container {
-		width: 80%;
+	.main-heading {
+		font-size: var(--text-4xl);
+		margin-top: 3rem;
 	}
-}
 
-@media screen and (max-width: 1024px) {
 	.inner-container {
 		width: 100%;
-		padding-top: 3rem;
 	}
 
-	.heading-text {
-		font-size: var(--text-4xl);
-		font-weight: 300;
+	.right-container {
+		margin-top: 8rem;
+	}
+
+	.body-text-left,
+	.body-text-right {
+		padding-top: 0.8rem;
 		line-height: 1.2;
-	}
-
-	.heading-sub-text {
-		font-size: var(--text-ssm);
-	}
-
-	.body-text {
-		font-size: var(--text-base);
-		line-height: 1.35;
 	}
 
 	.ig-icon {
@@ -105,93 +128,192 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
-	.inner-container {
-		align-items: center;
-		padding-top: 8rem;
+@media screen and (max-width: 1024px) {
+	.main-heading {
+		font-size: var(--text-3xl);
+		font-weight: 300;
 	}
 
-	.chef-ton-img {
-		width: 90%;
+	.left-image,
+	.right-image {
+		width: max-content;
 	}
 
-	.text-container {
-		padding: 0 0 0 0;
+	.right-container {
+		margin-top: 6rem;
+	}
+
+	.img-container-left {
+		justify-content: flex-start;
+		width: 50%;
+		padding: 0.5rem;
+	}
+	.img-container-right {
+		justify-content: flex-end;
+		width: 50%;
+		padding: 0.5rem;
+	}
+
+	.text-container-left {
+		padding-right: 0.6rem;
+		width: 60%;
+	}
+
+	.text-container-right {
+		padding-left: 0.6rem;
+		width: 60%;
 	}
 
 	.heading-text {
-		font-size: var(--text-2xl);
+		font-size: var(--text-lg);
 		font-weight: 400;
+		line-height: 1.25;
 	}
 
 	.heading-sub-text {
 		font-size: var(--text-xs);
 	}
 
-	.body-text {
-		font-size: var(--text-sm);
-		line-height: 1.3;
+	.body-text-left,
+	.body-text-right {
+		font-size: var(--text-xs);
+		padding-top: 0.6rem;
+		font-weight: 500;
+	}
+
+	.social-media-link-container {
+		padding-top: 0.8rem;
+	}
+
+	.ig-icon {
+		font-size: var(--text-lg);
 	}
 }
 
-@media screen and (max-width: 425px) {
-	.inner-container {
-		flex-direction: column;
-		width: 100%;
-		padding-top: 4rem;
-	}
-	.img-container {
-		width: 85%;
+@media screen and (max-width: 768px) {
+	.main-heading {
+		margin-top: 4rem;
+		padding: 1rem;
 	}
 
-	.text-container {
-		width: 77%;
-		padding: 1rem 0 0 0;
+	.inner-container {
+		flex-direction: column;
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+		width: 95%;
+	}
+
+	.right-container,
+	.left-container {
+		padding: 1.5rem 0;
+		width: 100%;
+		border-bottom: 1px solid rgb(184, 184, 184);
+		border-left: none;
+		margin-top: 0;
+	}
+
+	.img-container-left,
+	.img-container-right {
+		width: 40%;
+		padding: 0;
+	}
+
+	.text-container-left {
+		padding-left: 1rem;
+		width: 60%;
+	}
+
+	.text-container-right {
+		padding-right: 1rem;
+		border-left: none;
+		width: 60%;
 	}
 
 	.heading-text {
-		line-height: 1.35;
+		font-size: var(--text-xl);
 	}
 
 	.heading-sub-text {
 		font-size: var(--text-ssm);
-		letter-spacing: 0.5px;
 	}
 
-	.body-text {
+	.body-text-left,
+	.body-text-right {
 		font-size: var(--text-base);
-		padding: 1rem 0 0 0;
-		border-right: none;
+		padding-top: 1rem;
+		line-height: 1.25;
+		font-weight: 400;
+	}
+
+	.social-media-link-container {
+		padding-top: 1.5rem;
 	}
 
 	.ig-icon {
 		font-size: var(--text-xl);
-		color: rgb(79, 79, 79);
 	}
 
-	.social-media {
-		padding-bottom: 1.5rem;
+	.social-text {
+		font-size: var(--text-base);
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.left-container,
+	.right-container {
+		flex-direction: column;
+		padding-top: 1.5rem;
+		border-bottom: none;
+	}
+
+	.right-container {
+		flex-direction: column-reverse;
+	}
+
+	.left-image,
+	.right-image {
+		width: 95%;
+		margin: 0;
+	}
+
+	.img-container-left,
+	.img-container-right {
+		justify-content: center;
+		width: 100%;
+	}
+
+	.text-container-left,
+	.text-container-right {
+		padding: 1rem 0;
+		width: 94%;
 		border-bottom: 1px solid rgb(184, 184, 184);
 	}
 }
 
 @media screen and (max-width: 375px) {
-	.heading-text {
-		font-size: var(--text-xl);
+	.main-heading {
+		padding: 0;
 	}
 
-	.body-text {
-		font-size: var(--text-sm);
-		line-height: 1.2;
+	.left-image,
+	.right-image {
+		width: 95%;
+	}
+
+	.text-container-left,
+	.text-container-right {
+		width: 93%;
+	}
+	.body-text-left,
+	.body-text-right {
+		font-size: var(--text-ssm);
+		line-height: 1.35;
 	}
 }
 
 @media screen and (max-width: 320px) {
-	.heading-text {
-		font-size: var(--text-med);
-	}
-
-	.body-text {
-		font-size: var(--text-ssm);
+	.body-text-left,
+	.body-text-right {
+		line-height: 1.25;
 	}
 }
