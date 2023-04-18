@@ -14,16 +14,20 @@ export default function Home() {
 			<div className={styles[`sub-text`]}>ฤดู - Seasonal</div>
 			<div className={styles[`container`]}>
 				<div className={styles[`social-media`]}>
-					<a href="https://www.facebook.com/LeDuWineBarandrestaurant/" target="_blank">
+					<a
+						className={styles["social-links"]}
+						href="https://www.facebook.com/LeDuWineBarandrestaurant/"
+						target="_blank"
+					>
 						<FontAwesomeIcon icon={faFacebookF} />
 					</a>
-					<a href="https://www.instagram.com/ledubkk/" target="_blank">
+					<a className={styles["social-links"]} href="https://www.instagram.com/ledubkk/" target="_blank">
 						<FontAwesomeIcon icon={faInstagram} />
 					</a>
-					<a href="https://goo.gl/maps/XJcEeLyfYbk1eFXi6" target="_blank">
+					<a className={styles["social-links"]} href="https://goo.gl/maps/XJcEeLyfYbk1eFXi6" target="_blank">
 						<FontAwesomeIcon icon={faLocationDot} />
 					</a>
-					<a href="mailto:info@ledubkk.com" target="_blank">
+					<a className={styles["social-links"]} href="mailto:info@ledubkk.com" target="_blank">
 						<FontAwesomeIcon icon={faEnvelope} />
 					</a>
 				</div>
