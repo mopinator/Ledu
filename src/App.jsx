@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import NavLayout from "./components/Layout/NavLayout";
 import About from "./pages/About/About";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact/Contact";
 import Gallery from "./pages/Gallery";
 import Menu from "./pages/Menu";
 import Team from "./pages/Team/Team";

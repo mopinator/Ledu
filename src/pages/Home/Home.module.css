@@ -1,11 +1,11 @@
 .img-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 6rem;
+	margin-top: 5rem;
 }
 
 .img-container > img {
-	max-width: 25rem;
+	max-width: 24rem;
 }
 
 .sub-text {
@@ -75,10 +75,34 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
+	.img-container {
+		margin-top: 2.5rem;
+	}
+	.img-container > img {
+		max-width: 21rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.img-container {
+		margin-top: 3rem;
+	}
+	.img-container > img {
+		max-width: 22rem;
+	}
+}
+
+@media screen and (max-width: 820px) {
 	.img-container {
 		margin-top: 10rem;
 	}
+	.img-container > img {
+		max-width: 24rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
 	.img-container > img {
 		max-width: 20rem;
 	}
@@ -88,7 +112,7 @@
 	}
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
 	.img-container {
 		margin-top: 6rem;
 	}
@@ -114,7 +138,7 @@
 		padding: 1.6rem;
 	}
 	.img-container > img {
-		max-width: 16rem;
+		max-width: 15rem;
 	}
 	.social-media > a {
 		font-size: 1.5rem;
@@ -123,11 +147,14 @@
 }
 
 @media screen and (max-width: 320px) {
+	.img-container {
+		margin-top: 4rem;
+	}
 	.sub-text {
 		padding: 1.4rem;
 	}
 	.img-container > img {
-		max-width: 14rem;
+		max-width: 12rem;
 	}
 	.social-media > a {
 		padding: 1.3rem;

@@ -6,7 +6,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export default function Navbar() {
-	const [openNav, setOpenNav] = useState(true);
+	const [openNav, setOpenNav] = useState(false);
 
 	function handleChange() {
 		setOpenNav(() => !openNav);
