@@ -59,11 +59,7 @@ export default function Contact() {
 							<div className={styles["social-media-container"]}>
 								<h4 className={styles["sub-heading"]}>Follow us</h4>
 								<div className={styles["icons-container"]}>
-									<a
-										className={styles["social-icons"]}
-										href="https://www.facebook.com/LeDuWineBarandrestaurant/"
-										target="_blank"
-									>
+									<a className={styles["social-icons"]} href="https://www.facebook.com/Ledurestaurant/" target="_blank">
 										<FontAwesomeIcon icon={faFacebookF} />
 									</a>
 									<a className={styles["social-icons"]} href="https://www.instagram.com/ledubkk/" target="_blank">

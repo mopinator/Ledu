@@ -43,7 +43,7 @@ export default function Navbar() {
 					</Link>
 				</div>
 				<div className={openNav ? styles["show-nav-social-icons"] : styles["hide-nav-social-icons"]}>
-					<a href="https://www.facebook.com/LeDuWineBarandrestaurant/" target="_blank">
+					<a href="https://www.facebook.com/Ledurestaurant/" target="_blank">
 						<FontAwesomeIcon className={styles["nav-social-icons"]} icon={faFacebookF} />
 					</a>
 					<a href="https://www.instagram.com/ledubkk/" target="_blank">

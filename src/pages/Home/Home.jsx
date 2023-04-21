@@ -14,11 +14,7 @@ export default function Home() {
 			<div className={styles[`sub-text`]}>ฤดู - Seasonal</div>
 			<div className={styles[`container`]}>
 				<div className={styles[`social-media`]}>
-					<a
-						className={styles["social-links"]}
-						href="https://www.facebook.com/LeDuWineBarandrestaurant/"
-						target="_blank"
-					>
+					<a className={styles["social-links"]} href="https://www.facebook.com/Ledurestaurant/" target="_blank">
 						<FontAwesomeIcon icon={faFacebookF} />
 					</a>
 					<a className={styles["social-links"]} href="https://www.instagram.com/ledubkk/" target="_blank">
