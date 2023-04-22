@@ -102,6 +102,15 @@
 	}
 }
 
+@media screen and (max-width: 806px) {
+	.img-container {
+		margin-top: 3rem;
+	}
+	.img-container > img {
+		max-width: 22rem;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.img-container > img {
 		max-width: 20rem;

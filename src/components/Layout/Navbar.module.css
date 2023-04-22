@@ -30,7 +30,18 @@
 	transform: scale(110%);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 568px) {
+	.links {
+		text-decoration: none;
+		padding: 1.5rem 1rem;
+		font-size: var(--text-lg);
+		font-family: var(--font-primary);
+		color: black;
+		letter-spacing: 0.1rem;
+	}
+}
+
+@media screen and (max-width: 567px) {
 	.navbar,
 	.hidden-nav {
 		flex-direction: column;

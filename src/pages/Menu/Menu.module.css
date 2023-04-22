@@ -176,6 +176,9 @@
 }
 
 @media screen and (max-width: 884px) {
+	.inner-container {
+		margin: 1rem 0 3rem 0;
+	}
 	.menu-inner-container-top > p,
 	.menu-option,
 	.sub-heading {
@@ -184,6 +187,9 @@
 }
 
 @media screen and (max-width: 834px) {
+	.inner-container {
+		margin: 5.5rem 0 0 0;
+	}
 	.menu-inner-container-top > p,
 	.menu-option,
 	.sub-heading {
@@ -196,6 +202,9 @@
 }
 
 @media screen and (max-width: 768px) {
+	.inner-container {
+		margin: 2.5rem 0 0 0;
+	}
 	.menu-inner-container-top,
 	.menu-inner-container-bot {
 		width: 90%;
