@@ -5,22 +5,51 @@
 
 .inner-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	margin-top: 4rem;
+	margin: 3rem 0 5rem 0;
+	width: 90%;
 }
 
 .four-course-container {
-	padding: 0rem 4rem;
-	margin-right: 3rem;
-	border-left: 1px solid rgb(184, 184, 184);
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
 
 .six-course-container {
-	padding: 0rem 4rem;
-	margin-left: 3rem;
-	margin-top: 4px;
-	border-right: 1px solid rgb(184, 184, 184);
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+	width: 100%;
+}
+
+.four-course-menu,
+.six-course-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+.menu-inner-container-top,
+.menu-inner-container-bot {
+	display: flex;
+	flex-direction: column;
+	width: 55%;
+}
+
+.top-image-container,
+.bot-image-container {
+	display: flex;
+	width: 50%;
+}
+
+.top-image,
+.bot-image {
+	border-radius: 5px;
 }
 
 .sub-heading {
@@ -43,166 +72,212 @@
 	letter-spacing: 1px;
 }
 
-.four-course-menu,
-.six-course-menu {
-	border-bottom: 1px dotted black;
-	padding: 0 0 1rem 0;
-}
-
-.four-course-price,
-.six-course-price {
-	padding: 0.8rem 0 0 0;
-}
-
-.four-course-price > p,
-.six-course-price > p,
-.four-course-menu > p,
+.menu-inner-container-top > p,
+.menu-inner-container-bot > p,
 .menu-option,
 .sub-heading {
-	padding: 0.5rem 0;
-}
-
-.six-course-menu > p {
-	padding: 0.72rem 0;
+	padding: 0.6rem;
 }
 
 .footer {
-	font-size: var(--text-ssm);
-	letter-spacing: 0.5px;
+	font-size: var(--text-sm);
+	padding: 0.6rem;
+	font-style: italic;
+}
+
+@media screen and (max-width: 1440px) {
+	.menu-inner-container-top,
+	.menu-inner-container-bot {
+		width: 65%;
+	}
+	.footer {
+		font-size: var(--text-ssm);
+	}
 }
 
 @media screen and (max-width: 1280px) {
 	.inner-container {
-		margin-top: 0;
+		width: 95%;
+	}
+
+	.menu-inner-container-top,
+	.menu-inner-container-bot {
+		width: 70%;
+	}
+
+	.menu-inner-container-top > p,
+	.menu-inner-container-bot > p,
+	.menu-option,
+	.sub-heading {
+		padding: 0.3rem;
 	}
 }
 
 @media screen and (max-width: 1194px) {
-	.four-course-container {
-		margin-right: 2.5rem;
-	}
-
-	.six-course-container {
-		margin-left: 2.5rem;
-	}
 }
 
 @media screen and (max-width: 1024px) {
 	.inner-container {
-		margin-top: 0;
-		width: 96%;
+		margin: 2rem 0 4rem 0;
 	}
+
+	.menu-inner-container-top,
+	.menu-inner-container-bot {
+		width: 80%;
+	}
+
+	.menu-inner-container-top > p,
+	.menu-inner-container-bot > p,
+	.menu-option,
 	.sub-heading {
-		padding: 0 0 0.5rem 0;
+		padding: 0.25rem;
 	}
 
-	.four-course-container {
-		padding: 0rem 2rem;
-		margin-right: 2rem;
+	.sub-heading {
+		font-size: var(--text-lg);
+		font-weight: 500;
 	}
 
-	.six-course-container {
-		padding: 0rem 2rem;
-		margin-left: 2rem;
-	}
-
-	.four-course-menu,
-	.six-course-menu {
-		padding: 0 0 1rem 0;
-	}
-
-	.four-course-price > p,
-	.six-course-price > p,
-	.four-course-menu > p,
+	.menu-inner-container-top > p,
+	.menu-inner-container-bot > p,
 	.menu-option {
-		padding: 0.4rem 0;
-	}
-
-	.six-course-menu > p {
-		padding: 0.616rem 0;
+		font-size: var(--text-sm);
 	}
 
 	.footer {
+		font-size: var(--text-xs);
+		font-weight: 500;
+	}
+}
+
+@media screen and (max-width: 928px) {
+	.inner-container {
+		margin: 1rem 0 4rem 0;
+	}
+
+	.menu-inner-container-top > p,
+	.menu-option,
+	.sub-heading {
+		padding: 0.19rem;
+	}
+	.menu-inner-container-bot > p {
+		padding: 0.2rem;
+	}
+
+	.sub-heading {
+		font-size: var(--text-med);
+	}
+
+	.menu-inner-container-top > p,
+	.menu-inner-container-bot > p,
+	.menu-option {
 		font-size: var(--text-ssm);
-		letter-spacing: 0.1px;
 	}
 }
 
 @media screen and (max-width: 884px) {
-	.inner-container {
-		margin-top: 6rem;
+	.menu-inner-container-top > p,
+	.menu-option,
+	.sub-heading {
+		padding: 0.16rem;
 	}
 }
 
-@media screen and (max-width: 820px) {
-	.inner-container {
-		margin-top: 5rem;
-	}
-	.four-course-container {
-		padding: 0rem 1rem;
+@media screen and (max-width: 834px) {
+	.menu-inner-container-top > p,
+	.menu-option,
+	.sub-heading {
+		padding: 0.13rem;
 	}
 
-	.six-course-container {
-		padding: 0rem 1rem;
+	.sub-heading {
+		font-size: var(--text-base);
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.inner-container {
-		margin-top: 1rem;
-		flex-direction: column;
-		width: 80%;
+	.menu-inner-container-top,
+	.menu-inner-container-bot {
+		width: 90%;
 	}
-	.four-course-container,
-	.six-course-container {
-		border: none;
-		margin: 0;
-		padding: 0;
+	.menu-inner-container-top > p,
+	.menu-option,
+	.sub-heading {
+		padding: 0.1rem;
 	}
 
-	.six-course-container,
-	.four-course-container {
-		margin-bottom: 1.5rem;
-		border-bottom: 1px solid rgb(184, 184, 184);
-	}
-	.four-course-menu,
-	.six-course-menu {
-		border-bottom: none;
+	.menu-inner-container-bot > p {
+		padding: 0.19rem;
 	}
 }
 
 @media screen and (max-width: 600px) {
 	.inner-container {
-		margin-top: 5rem;
+		text-align: center;
+		margin: 4rem 0 0 0;
+		width: 100%;
+	}
+
+	.four-course-container,
+	.six-course-container {
+		flex-direction: column-reverse;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+
+	.four-course-menu,
+	.six-course-menu {
+		width: 100%;
+	}
+
+	.menu-inner-container-top,
+	.menu-inner-container-bot {
+		width: 84%;
+	}
+
+	.top-image-container,
+	.bot-image-container {
+		width: 95%;
+	}
+
+	.sub-heading {
+		font-size: var(--text-xl);
+		font-weight: 500;
+	}
+
+	.menu-inner-container-top > p,
+	.menu-inner-container-bot > p,
+	.menu-option,
+	.sub-heading {
+		padding: 0.4rem;
 	}
 }
 
 @media screen and (max-width: 428px) {
 	.inner-container {
-		margin-top: 3.5rem;
-		flex-direction: column;
-		width: 96%;
-	}
-
-	.footer {
-		font-size: var(--text-ssm);
-		letter-spacing: none;
+		margin: 3.4rem 0 0 0;
 	}
 }
 
 @media screen and (max-width: 360px) {
-	.footer {
-		font-size: var(--text-xs);
+	.sub-heading {
+		font-size: var(--text-lg);
 	}
 }
 
 @media screen and (max-width: 320px) {
-	.four-course-price > p,
-	.six-course-price > p,
-	.four-course-menu > p,
-	.six-course-menu > p,
-	.menu-option-container-one > p,
-	.menu-option-container-two > p {
-		font-size: var(--text-ssm);
+	.inner-container {
+		margin: 3rem 0 0 0;
+	}
+	.menu-inner-container-top,
+	.menu-inner-container-bot {
+		width: 92%;
+	}
+
+	.menu-inner-container-top > p,
+	.menu-inner-container-bot > p,
+	.menu-option,
+	.sub-heading {
+		padding: 0.32rem;
 	}
 }
