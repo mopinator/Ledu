@@ -30,11 +30,11 @@
 	}
 
 	#swiper-container {
-		height: 78vh;
+		height: 78dvh;
 	}
 
 	#swiper-slide {
-		height: 78vh;
+		height: 78dvh;
 	}
 }
 
@@ -43,11 +43,11 @@
 		margin-top: 5rem;
 	}
 	#swiper-container {
-		height: 70vh;
+		height: 70dvh;
 	}
 
 	#swiper-slide {
-		height: 70vh;
+		height: 70dvh;
 	}
 }
 
@@ -80,11 +80,11 @@
 		margin-top: 4rem;
 	}
 	#swiper-container {
-		height: 84vh;
+		height: 84dvh;
 	}
 
 	#swiper-slide {
-		height: 84vh;
+		height: 84dvh;
 	}
 
 	.images {
@@ -97,11 +97,11 @@
 		margin-top: 4rem;
 	}
 	#swiper-container {
-		height: 82vh;
+		height: 82dvh;
 	}
 
 	#swiper-slide {
-		height: 82vh;
+		height: 82dvh;
 	}
 }
 
@@ -110,10 +110,10 @@
 		margin-top: 3rem;
 	}
 	#swiper-container {
-		height: 85vh;
+		height: 85dvh;
 	}
 	#swiper-slide {
-		height: 85vh;
+		height: 85dvh;
 	}
 }
 
@@ -122,10 +122,10 @@
 		margin-top: 3rem;
 	}
 	#swiper-container {
-		height: 72vh;
+		height: 72dvh;
 	}
 	#swiper-slide {
-		height: 72vh;
+		height: 72dvh;
 	}
 }
 
@@ -134,9 +134,9 @@
 		margin-top: 3rem;
 	}
 	#swiper-container {
-		height: 80vh;
+		height: 80dvh;
 	}
 	#swiper-slide {
-		height: 80vh;
+		height: 80dvh;
 	}
 }
