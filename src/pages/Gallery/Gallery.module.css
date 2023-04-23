@@ -1,17 +1,15 @@
 .main-container {
-	display: flex;
-	justify-content: center;
+	/* display: flex;
+	justify-content: center; */
 	margin-top: 6rem;
 }
 
 .inner-container {
 	display: flex;
-	width: 100dvw;
-	overflow-x: hidden;
 }
 
 #swiper-slide {
-	flex-shrink: 1;
+	width: max-content;
 }
 
 #images {

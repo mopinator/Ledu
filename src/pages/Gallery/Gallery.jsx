@@ -20,7 +20,7 @@ export default function Gallery() {
 						slidesPerView={"auto"}
 						grabCursor={true}
 						// loop={true}
-						// centeredSlides={true}
+						centeredSlides={true}
 						pagination={{ clickable: true }}
 						navigation={{ clickable: true }}
 						// coverflowEffect={{
