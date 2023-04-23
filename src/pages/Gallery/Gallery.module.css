@@ -122,10 +122,14 @@
 		margin-top: 3rem;
 	}
 	#swiper-container {
-		height: 72dvh;
+		height: 100dvh;
 	}
 	#swiper-slide {
-		height: 72dvh;
+		height: 100dvh;
+	}
+	#images {
+		height: 100dvh;
+		width: 100dvw;
 	}
 }
 
@@ -134,9 +138,14 @@
 		margin-top: 3rem;
 	}
 	#swiper-container {
-		height: 80dvh;
+		height: 100dvh;
 	}
 	#swiper-slide {
-		height: 80dvh;
+		/* margin-left: 0.5rem; */
+		height: 100dvh;
+	}
+	#images {
+		height: 100dvh;
+		width: 100dvw;
 	}
 }

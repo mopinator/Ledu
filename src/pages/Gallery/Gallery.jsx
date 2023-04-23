@@ -10,37 +10,31 @@ import "swiper/css/navigation";
 import { Navigation, Pagination, EffectCoverflow } from "swiper";
 
 export default function Gallery() {
-	const pag = {
-		pagination: {
-			el: ".swiper-pagination",
-			type: "bullet",
-		},
-	};
-
 	return (
 		<>
 			<div className={styles["main-container"]}>
 				<div className={styles["inner-container"]}>
 					<Swiper
 						modules={[EffectCoverflow, Navigation, Pagination]}
-						effect={"coverflow"}
+						// effect={"coverflow"}
 						slidesPerView={"auto"}
 						grabCursor={true}
-						centeredSlides={true}
-						pagination={{ pag, clickable: true }}
+						loop={true}
+						// centeredSlides={true}
+						pagination={{ clickable: true }}
 						navigation={{ clickable: true }}
-						coverflowEffect={{
-							rotate: 0,
-							stretch: 0,
-							depth: 100,
-							modifier: 1,
-						}}
+						// coverflowEffect={{
+						// 	rotate: 0,
+						// 	stretch: 0,
+						// 	depth: 100,
+						// 	modifier: 1,
+						// }}
 						id={styles["swiper-container"]}
 					>
 						{images.map((image) => {
 							return (
 								<SwiperSlide className={styles["swiper-slide"]} id={styles["swiper-slide"]} key={image.id}>
-									<img className={styles["images"]} src={image.img} alt="images" />
+									<img id={styles["images"]} src={image.img} alt="images" />
 								</SwiperSlide>
 							);
 						})}
