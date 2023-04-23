@@ -50,6 +50,7 @@
 .top-image,
 .bot-image {
 	border-radius: 5px;
+	overflow-x: hidden;
 }
 
 .sub-heading {

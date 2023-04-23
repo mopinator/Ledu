@@ -202,6 +202,12 @@
 		padding-top: 0rem;
 	}
 
+	.text-area-top,
+	.text-area-bot {
+		flex: 60%;
+		padding: 0;
+	}
+
 	/* shared class name styles */
 	.left-container,
 	.right-container {
@@ -221,7 +227,7 @@
 	}
 
 	.body-images {
-		width: 89%;
+		width: 94%;
 	}
 
 	.body-text-top,

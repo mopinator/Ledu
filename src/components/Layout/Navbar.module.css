@@ -23,6 +23,7 @@
 	font-family: var(--font-primary);
 	color: black;
 	letter-spacing: 0.1rem;
+	overflow: hidden;
 }
 
 .links:hover {
@@ -30,7 +31,7 @@
 	transform: scale(110%);
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 600px) {
 	.links {
 		text-decoration: none;
 		padding: 1.5rem 1rem;
@@ -38,6 +39,7 @@
 		font-family: var(--font-primary);
 		color: black;
 		letter-spacing: 0.1rem;
+		overflow: hidden;
 	}
 }
 
@@ -48,11 +50,11 @@
 		justify-content: flex-start;
 		align-items: center;
 		position: fixed;
-		z-index: 1;
+		z-index: 2;
 		top: 0;
 		right: -40%;
 		height: 100%;
-		width: 40%;
+		width: 100%;
 		border-radius: 20px 0 0 20px;
 		box-shadow: 2px 2px 15px #bbbbbb;
 		transform: translateX(100%);
@@ -67,6 +69,7 @@
 
 	.hamburger {
 		display: contents;
+		z-index: 100;
 	}
 
 	.hamburger-icon {
@@ -81,7 +84,7 @@
 	.close-icon {
 		font-size: 2rem;
 		margin: 2rem;
-		z-index: 2;
+		z-index: 3;
 		position: fixed;
 		top: 0;
 		right: 0;
