@@ -6,7 +6,7 @@
 
 .inner-container {
 	display: flex;
-	width: 100%;
+	width: 100dvw;
 	overflow-x: hidden;
 }
 
@@ -14,7 +14,7 @@
 	flex-shrink: 1;
 }
 
-.images {
+#images {
 	height: 100%;
 }
 
@@ -85,10 +85,6 @@
 
 	#swiper-slide {
 		height: 84dvh;
-	}
-
-	.images {
-		height: 100%;
 	}
 }
 
