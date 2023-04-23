@@ -16,19 +16,19 @@ export default function Gallery() {
 				<div className={styles["inner-container"]}>
 					<Swiper
 						modules={[EffectCoverflow, Navigation, Pagination]}
-						// effect={"coverflow"}
+						effect={"coverflow"}
 						slidesPerView={"auto"}
 						grabCursor={true}
 						loop={true}
-						centeredSlides={true}
+						// centeredSlides={true}
 						pagination={{ clickable: true }}
 						navigation={{ clickable: true }}
-						// coverflowEffect={{
-						// 	rotate: 0,
-						// 	stretch: 0,
-						// 	depth: 100,
-						// 	modifier: 1,
-						// }}
+						coverflowEffect={{
+							rotate: 0,
+							stretch: 0,
+							depth: 100,
+							modifier: 1,
+						}}
 						id={styles["swiper-container"]}
 					>
 						{images.map((image) => {
