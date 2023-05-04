@@ -141,7 +141,7 @@
 
 	.left-image,
 	.right-image {
-		width: max-content;
+		width: 100%;
 	}
 
 	.right-container {
