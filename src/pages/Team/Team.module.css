@@ -206,6 +206,19 @@
 	}
 }
 
+@media screen and (max-width: 915px) {
+	.heading-text {
+		font-size: var(--text-med);
+		line-height: 1.2;
+	}
+
+	.body-text-left,
+	.body-text-right {
+		font-size: var(--text-xs);
+		line-height: 1.1;
+	}
+}
+
 @media screen and (max-width: 884px) {
 	.main-heading {
 		margin-top: 0rem;
